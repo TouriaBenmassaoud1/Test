@@ -1,0 +1,11 @@
+- name: 'Test'
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: line replace
+      lineinfile:
+        path: /home/ec2-user/Touria/Test/file2
+        line: "####"
+        regexp: "^line2 test2$"
+        state: present
+        create: True
