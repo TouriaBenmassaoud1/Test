@@ -4,7 +4,7 @@
   tasks:
     - name: line replace
       lineinfile:
-        path: /home/ec2-user/Touria/file2
+        path: ./file2
         line: "####"
         regexp: "^line2 test2$"
         state: present
