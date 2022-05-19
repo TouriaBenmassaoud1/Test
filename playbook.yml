@@ -1,6 +1,5 @@
 - name: 'Test'
   hosts: localhost
-  become: true
   connection: local
   tasks:
     - name: line replace
