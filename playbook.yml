@@ -9,3 +9,10 @@
         regexp: "^line2 test2$"
         state: present
         create: True
+    - name: create file in /home/ec2-user
+      become: yes
+      become_user: root
+      file: 
+        path: /home/ec2-user/file.txt
+        state: touch
+        mode: 0444
