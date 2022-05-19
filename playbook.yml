@@ -4,7 +4,7 @@
   tasks:
     - name: line replace
       lineinfile:
-        path: ./file2
+        path: /var/lib/jenkins/workspace/test/file2
         line: "####"
         regexp: "^line2 test2$"
         state: present
